@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jvafx_projet.MenuController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #0c2461;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/pictures/vegetables.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" top="100.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label style="-fx-background-color: white;" text="Vegetables">
+                     <VBox.margin>
+                        <Insets left="70.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #0c2461;" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/pictures/fruits.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" top="100.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label prefHeight="19.0" prefWidth="41.0" style="-fx-background-color: white;" text="Fruits">
+                     <VBox.margin>
+                        <Insets left="80.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #0c2461;" GridPane.columnIndex="2">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/pictures/meat.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="10.0" top="100.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label style="-fx-background-color: white;" text="Meat">
+                     <VBox.margin>
+                        <Insets left="80.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

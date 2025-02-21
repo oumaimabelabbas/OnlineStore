@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jvafx_projet.MeatController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c2461;">
+               <children>
+                  <ImageView fitHeight="129.0" fitWidth="179.0" layoutX="54.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/pictures/turkey.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="turkeyname" layoutX="55.0" layoutY="30.0" text="Turkey" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="turkeyprice" layoutX="198.0" layoutY="30.0" text="82DH" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="turkeyspin" layoutX="14.0" layoutY="192.0" prefHeight="25.0" prefWidth="127.0" />
+                  <Button fx:id="turkeybtn" layoutX="156.0" layoutY="192.0" mnemonicParsing="false" onAction="#addturkey" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: white;" text="Add">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c2461;" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="114.0" fitWidth="155.0" layoutX="69.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/pictures/sausage.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="sausagename" layoutX="46.0" layoutY="31.0" text="Sausage" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sausageprice" layoutX="189.0" layoutY="31.0" text="80DH" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="sausagespin" layoutX="5.0" layoutY="193.0" prefHeight="25.0" prefWidth="127.0" />
+                  <Button fx:id="sausagebtn" layoutX="147.0" layoutY="193.0" mnemonicParsing="false" onAction="#addsausage" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: white;" text="Add">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c2461;" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="113.0" fitWidth="163.0" layoutX="59.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/pictures/beef.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="beefname" layoutX="26.0" layoutY="27.0" text="Beef" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="beefprice" layoutX="219.0" layoutY="27.0" text="110DH" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="beefspin" layoutX="12.0" layoutY="189.0" prefHeight="25.0" prefWidth="127.0" />
+                  <Button fx:id="beefbtn" layoutX="149.0" layoutY="189.0" mnemonicParsing="false" onAction="#addbeef" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: white;" text="Add">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c2461;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="163.0" fitWidth="174.0" layoutX="65.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/pictures/minced_meat.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="meatname" layoutX="24.0" layoutY="29.0" text="Minced Meat" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="meatprice" layoutX="187.0" layoutY="29.0" text="90DH" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="mincedmeatspin" layoutX="13.0" layoutY="191.0" prefHeight="25.0" prefWidth="127.0" />
+                  <Button fx:id="meatbtn" layoutX="152.0" layoutY="191.0" mnemonicParsing="false" onAction="#addmeat" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: white;" text="Add">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

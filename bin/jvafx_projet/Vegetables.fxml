@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jvafx_projet.VegetablesController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c2461;">
+               <children>
+                  <ImageView fitHeight="87.0" fitWidth="149.0" layoutX="66.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/pictures/onion.png" />
+                     </image></ImageView>
+                  <Label fx:id="onionname" layoutX="59.0" layoutY="22.0" text="Onion" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Spinner fx:id="onionspin" layoutX="13.0" layoutY="181.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Button fx:id="onionadd" layoutX="161.0" layoutY="181.0" mnemonicParsing="false" onAction="#addonion" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: white;" text="Add">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Label fx:id="onionprice" layoutX="187.0" layoutY="22.0" text="2.04DH" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c2461;" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="159.0" layoutX="80.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/pictures/potato.png" />
+                     </image></ImageView>
+                  <Label fx:id="potatoname" layoutX="55.0" layoutY="22.0" text="Potato" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Spinner fx:id="potatospin" layoutX="18.0" layoutY="184.0" prefHeight="21.0" prefWidth="116.0" />
+                  <Button fx:id="potatoadd" layoutX="146.0" layoutY="184.0" mnemonicParsing="false" onAction="#potatoadd" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: white;" text="Add">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Label fx:id="potatoprice" layoutX="203.0" layoutY="22.0" text="1.42DH" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c2461;" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="tomatoname" layoutX="66.0" layoutY="14.0" text="Tomato" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <ImageView fitHeight="176.0" fitWidth="168.0" layoutX="74.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/pictures/tomato.png" />
+                     </image></ImageView>
+                  <Spinner fx:id="tomatospin" layoutX="14.0" layoutY="196.0" prefHeight="25.0" prefWidth="119.0" />
+                  <Button fx:id="tomatoadd" layoutX="163.0" layoutY="196.0" mnemonicParsing="false" onAction="#tomatoadd" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: white;" text="Add">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Label fx:id="tomatoprice" layoutX="206.0" layoutY="14.0" text="1.48DH" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0c2461;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="128.0" layoutX="85.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/pictures/bellpepper.png" />
+                     </image></ImageView>
+                  <Label fx:id="bellpeppername" layoutX="50.0" layoutY="13.0" text="Bell Pepper" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Spinner fx:id="pepperspin" layoutX="14.0" layoutY="195.0" prefHeight="21.0" prefWidth="116.0" />
+                  <Button fx:id="bellpeperadd" layoutX="138.0" layoutY="195.0" mnemonicParsing="false" onAction="#bellpepperadd" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: white;" text="Add">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Label fx:id="bellpeperprice" layoutX="213.0" layoutY="13.0" text="5.26DH" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
